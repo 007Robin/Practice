@@ -1,4 +1,60 @@
 solid test
+	facet normal 0 0 -100
+		outer loop
+			vertex 10 0 0
+			vertex 10 10 0
+			vertex 20 10 0
+		endloop
+	endfacet
+	facet normal 0 -0 -100
+		outer loop
+			vertex 20 10 0
+			vertex 20 0 0
+			vertex 10 0 0
+		endloop
+	endfacet
+	facet normal 0 0 -100
+		outer loop
+			vertex 10 0 10
+			vertex 10 10 10
+			vertex 20 10 10
+		endloop
+	endfacet
+	facet normal 0 -0 -100
+		outer loop
+			vertex 10 0 10
+			vertex 20 0 10
+			vertex 20 10 10
+		endloop
+	endfacet
+	facet normal 0 -100 0
+		outer loop
+			vertex 20 10 10
+			vertex 10 10 0
+			vertex 20 10 0
+		endloop
+	endfacet
+	facet normal -0 -100 0
+		outer loop
+			vertex 10 10 0
+			vertex 10 10 10
+			vertex 20 10 10
+		endloop
+	endfacet
+	facet normal 0 -100 0
+		outer loop
+			vertex 10 0 0
+			vertex 20 0 0
+			vertex 20 0 10
+		endloop
+	endfacet
+	facet normal -0 -100 0
+		outer loop
+			vertex 10 0 0
+			vertex 10 0 10
+			vertex 20 0 10
+		endloop
+	endfacet
 	facet normal -100 0 0
 		outer loop
 			vertex 20 10 0
@@ -11,6 +67,20 @@ solid test
 			vertex 20 0 10
 			vertex 20 10 10
 			vertex 20 10 0
+		endloop
+	endfacet
+	facet normal 100 0 0
+		outer loop
+			vertex 10 0 0
+			vertex 10 10 0
+			vertex 10 10 10
+		endloop
+	endfacet
+	facet normal 100 0 0
+		outer loop
+			vertex 10 0 0
+			vertex 10 0 10
+			vertex 10 10 10
 		endloop
 	endfacet
 	facet normal 0 0 -5.29007
