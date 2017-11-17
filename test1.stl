@@ -104,10 +104,10 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal -8.81678 nan -inf
+ facet normal 0 0 -5.29007
   outer loop
    vertex 103 0 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 102.427 1.76336 -5
   endloop
  endfacet
@@ -132,21 +132,21 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal -5.44907 nan -inf
+ facet normal -0 0 -5.29007
   outer loop
    vertex 102.427 1.76336 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 100.927 2.85317 -5
   endloop
  endfacet
- facet normal 4.96805e-07 18.541 0
+ facet normal 4.44089e-15 18.541 0
   outer loop
    vertex 100.927 2.85317 -5
    vertex 99.0729 2.85317 -5
    vertex 99.0729 2.85317 5
   endloop
  endfacet
- facet normal 4.96805e-07 18.541 0
+ facet normal 4.44089e-15 18.541 0
   outer loop
    vertex 99.0729 2.85317 5
    vertex 100.927 2.85317 5
@@ -160,10 +160,10 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal -2.48402e-07 nan -inf
+ facet normal -0 0 -5.29007
   outer loop
    vertex 100.927 2.85317 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 99.0729 2.85317 -5
   endloop
  endfacet
@@ -188,23 +188,23 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal 5.44907 nan inf
+ facet normal 0 -0 -5.29007
   outer loop
    vertex 99.0729 2.85317 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 97.5729 1.76336 -5
   endloop
  endfacet
  facet normal -17.6336 5.72949 0
   outer loop
    vertex 97.5729 1.76336 -5
-   vertex 97 1.60769e-07 -5
-   vertex 97 1.60769e-07 5
+   vertex 97 3.67394e-16 -5
+   vertex 97 3.67394e-16 5
   endloop
  endfacet
  facet normal -17.6336 5.72949 0
   outer loop
-   vertex 97 1.60769e-07 5
+   vertex 97 3.67394e-16 5
    vertex 97.5729 1.76336 5
    vertex 97.5729 1.76336 -5
   endloop
@@ -212,20 +212,20 @@ solid test1
  facet normal 0 0 5.29007
   outer loop
    vertex 97.5729 1.76336 5
-   vertex 97 1.60769e-07 5
+   vertex 97 3.67394e-16 5
    vertex 100 0 5
   endloop
  endfacet
- facet normal 8.81678 nan inf
+ facet normal 0 -0 -5.29007
   outer loop
    vertex 97.5729 1.76336 -5
-   vertex -inf 0 0
-   vertex 97 1.60769e-07 -5
+   vertex 100 0 -5
+   vertex 97 3.67394e-16 -5
   endloop
  endfacet
  facet normal -17.6336 -5.72949 0
   outer loop
-   vertex 97 1.60769e-07 -5
+   vertex 97 3.67394e-16 -5
    vertex 97.5729 -1.76336 -5
    vertex 97.5729 -1.76336 5
   endloop
@@ -233,21 +233,21 @@ solid test1
  facet normal -17.6336 -5.72949 0
   outer loop
    vertex 97.5729 -1.76336 5
-   vertex 97 1.60769e-07 5
-   vertex 97 1.60769e-07 -5
+   vertex 97 3.67394e-16 5
+   vertex 97 3.67394e-16 -5
   endloop
  endfacet
  facet normal 0 0 5.29007
   outer loop
-   vertex 97 1.60769e-07 5
+   vertex 97 3.67394e-16 5
    vertex 97.5729 -1.76336 5
    vertex 100 0 5
   endloop
  endfacet
- facet normal 8.81678 nan inf
+ facet normal 0 0 -5.29007
   outer loop
-   vertex 97 1.60769e-07 -5
-   vertex -inf 0 0
+   vertex 97 3.67394e-16 -5
+   vertex 100 0 -5
    vertex 97.5729 -1.76336 -5
   endloop
  endfacet
@@ -272,21 +272,21 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal 5.44907 nan inf
+ facet normal 0 0 -5.29007
   outer loop
    vertex 97.5729 -1.76336 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 99.0729 -2.85317 -5
   endloop
  endfacet
- facet normal -1.49041e-06 -18.541 0
+ facet normal -4.44089e-15 -18.541 0
   outer loop
    vertex 99.0729 -2.85317 -5
    vertex 100.927 -2.85317 -5
    vertex 100.927 -2.85317 5
   endloop
  endfacet
- facet normal -1.49041e-06 -18.541 0
+ facet normal -4.44089e-15 -18.541 0
   outer loop
    vertex 100.927 -2.85317 5
    vertex 99.0729 -2.85317 5
@@ -300,10 +300,10 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal 7.45207e-07 nan inf
+ facet normal 0 0 -5.29007
   outer loop
    vertex 99.0729 -2.85317 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 100.927 -2.85317 -5
   endloop
  endfacet
@@ -328,23 +328,23 @@ solid test1
    vertex 100 0 5
   endloop
  endfacet
- facet normal -5.44907 nan -inf
+ facet normal 0 0 -5.29007
   outer loop
    vertex 100.927 -2.85317 -5
-   vertex -inf 0 0
+   vertex 100 0 -5
    vertex 102.427 -1.76336 -5
   endloop
  endfacet
  facet normal 17.6336 -5.72949 0
   outer loop
    vertex 102.427 -1.76336 -5
-   vertex 103 -3.21539e-07 -5
-   vertex 103 -3.21539e-07 5
+   vertex 103 -7.34788e-16 -5
+   vertex 103 -7.34788e-16 5
   endloop
  endfacet
  facet normal 17.6336 -5.72949 0
   outer loop
-   vertex 103 -3.21539e-07 5
+   vertex 103 -7.34788e-16 5
    vertex 102.427 -1.76336 5
    vertex 102.427 -1.76336 -5
   endloop
@@ -352,42 +352,42 @@ solid test1
  facet normal 0 -0 5.29007
   outer loop
    vertex 102.427 -1.76336 5
-   vertex 103 -3.21539e-07 5
+   vertex 103 -7.34788e-16 5
    vertex 100 0 5
   endloop
  endfacet
- facet normal -8.81678 nan -inf
+ facet normal 0 0 -5.29007
   outer loop
    vertex 102.427 -1.76336 -5
-   vertex -inf 0 0
-   vertex 103 -3.21539e-07 -5
+   vertex 100 0 -5
+   vertex 103 -7.34788e-16 -5
   endloop
  endfacet
  facet normal 0 0 0
   outer loop
-   vertex 103 -3.21539e-07 -5
+   vertex 103 -7.34788e-16 -5
    vertex 0 0 0
    vertex 0 0 0
   endloop
  endfacet
- facet normal 3.21539e-06 1030 0
+ facet normal 7.34788e-15 1030 0
   outer loop
    vertex 0 0 0
-   vertex 103 -3.21539e-07 5
-   vertex 103 -3.21539e-07 -5
+   vertex 103 -7.34788e-16 5
+   vertex 103 -7.34788e-16 -5
   endloop
  endfacet
- facet normal 1.60769e-06 15 -3.21539e-05
+ facet normal 3.67394e-15 15 -7.34788e-14
   outer loop
-   vertex 103 -3.21539e-07 5
+   vertex 103 -7.34788e-16 5
    vertex 0 0 0
    vertex 100 0 5
   endloop
  endfacet
- facet normal 0 inf -inf
+ facet normal 3.67394e-15 15 7.34788e-14
   outer loop
-   vertex 103 -3.21539e-07 -5
-   vertex -inf 0 0
+   vertex 103 -7.34788e-16 -5
+   vertex 100 0 -5
    vertex 0 0 0
   endloop
  endfacet
