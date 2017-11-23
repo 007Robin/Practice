@@ -33,8 +33,8 @@ class Vec3d {
 		friend Vec3d operator -(const Vec3d& v1, const Vec3d& v2);
 		friend Vec3d operator *(const Vec3d& vec, double m);		
 		friend Vec3d operator *(double n, const Vec3d& vec);		
-        friend double dot(Vec3d& a, Vec3d& b);
-        friend double dist(Vec3d& a, Vec3d& b);
+        	friend double dot(Vec3d& a, Vec3d& b);
+        	friend double dist(Vec3d& a, Vec3d& b);
 		
 		double dot(const Vec3d& a) {
 			double ans;
