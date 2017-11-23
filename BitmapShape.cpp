@@ -1,4 +1,4 @@
-//Xin Song -- Bitmap
+//Xin Song -- Bitmap includes horizLine, vertLine, line, drawEllipse, fillEllipse, drawRect
 #include<iostream>
 #include<iomanip>
 #include<math.h>
@@ -88,24 +88,14 @@ class Bitmap {
 					rgba[x + cols * y22] = rgb;
 			}
 		}
-		void drawEllipse2(int x0, int y0, int a, int b, uint32_t rgb){
-			uint32_t x = x0, y = y0;
-			const double pi = 3.1415926535897;
-			for(double t = -1 * pi; t <= pi; t+= 0.001) {
-				x = floor(x0 + (a/2)*cos(t));
-				y = floor(y0 + (b/2)*sin(t));
-				rgba[x + cols * y] = rgb;
-			}	
-		}
+
 		void fillEllipse(int x0, int y0, int a, int b, uint32_t rgb){
 			double y1 = 0, y2 = 0; 
 			for(int x = x0 - a/2; x <= x0 + a/2; ++x){
 				y1 = -sqrt(b*b/4.0 - (b*b/4.0)*(x - y0)*(x - y0)/(a*a/4.0)) + x0;
 				y2 = sqrt(b*b/4.0 - (b*b/4.0)*(x - y0)*(x - y0)/(a*a/4.0)) + x0;
 					int y11 = floor(y1);
-		//			rgba[x + cols * y11] = rgb;
 					int y22 = floor(y2);
-		//			rgba[x + cols * y22] = rgb;
 					for( int y = y11 + 1; y < y22; y++) {
 						rgba[x + cols * y] = rgb;
 					}
@@ -144,21 +134,17 @@ int main() {
 	const uint32_t BLUE = 0x0000FF;
 
 	Bitmap b(18,18); // all pixels = 0,0,0,0
-//	b.horizLine(0, 3, 0, RED); // from x=0 to x=300 at y = 0
-//	b.vertLine(0, 2, 3, BLUE); // from y=0 to y=200 at x = 300
-//	b.line(0,0, 4, 3, GREEN);  //https://en.wikipedia.org/wiki/Bresenham's_line_algorithm
+	b.horizLine(0, 3, 0, RED); // from x=0 to x=300 at y = 0
+	b.vertLine(0, 2, 3, BLUE); // from y=0 to y=200 at x = 300
+	b.line(0,0, 4, 3, GREEN);  //https://en.wikipedia.org/wiki/Bresenham's_line_algorithm
 	//	b.antialiasedLine(0,200, 400,300, 0xFFFF00); // OPTIONAL https://en.wikipedia.org/wiki/Xiaolin_Wu%27s_line_algorithm
 
-	//   ax^2 + by^2 = r^2
 	b.drawEllipse(9, 9, 12, 12, RED);    // create an ellipse centered (500,500)
 	cout << b;
-//	Bitmap c(18, 18);
-//	c.drawEllipse2(9, 9, 12, 12, RED);    // create an ellipse centered (500,500)
-//	cout << c;
-	// 200 = diameter in the x, 100 = diameter in y
+
 	b.fillEllipse(9, 9, 12, 12, GREEN);    // create an ellipse centered (500,500)
 
-//	b.drawRect(7, 6, 5, 5, RED); // draw outline rectangle
+	b.drawRect(7, 6, 5, 5, RED); // draw outline rectangle
 	cout <<b;
 	//TODO: Next week!!
 	//    b.fill(720,605, 0x0000FF);
