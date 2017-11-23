@@ -1,6 +1,3 @@
-//
-// Created by Jizhou.Sun on 2017/10/19.
-//
 #include <iostream>
 using namespace std;
 
@@ -25,12 +22,6 @@ public:
 
     //copy constructor
     Image(const Image& orig) : rgba(new uint32_t[orig.rows*orig.cols]),rows(orig.rows),cols(orig.cols){
-        //in session05 08MoveConstructor.cc why??????????
-//        uint32_t *rgba1 = rgba;
-//        const uint32_t* rgba2 = orig.rgba;
-//        for (int i = 0; i < orig.rows*orig.cols; i++) {
-//            *rgba++ = *rgba++;
-//        }
         for (int i = 0; i < orig.rows*orig.cols; i++) {
             rgba[i]=orig.rgba[i];
         }
