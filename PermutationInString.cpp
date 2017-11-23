@@ -1,3 +1,4 @@
+//Xin Song -- one of the first string's permutations is the substring of the second string.
 #include <vector>
 #include <utility>
 #include <string>
