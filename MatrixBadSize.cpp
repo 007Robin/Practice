@@ -1,8 +1,8 @@
 //Xin Song 
 #include<iostream>
 #include<vector>
-
 using namespace std;
+
 class Badsize{
 	private:
 		const char* filename;
@@ -13,6 +13,7 @@ class Badsize{
 			return s << "Badsize.filename: " <<  b.filename << " linenum: "<<  b.linenum << endl;
 		}
 };
+
 class Matrix {
 	double* m; //double** will be slow and complex
 	uint32_t rows, cols; 
