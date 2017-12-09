@@ -1,0 +1,14 @@
+inline function
+function templates
+templace classes
+functions
+exception handling
+threading
+semaphores
+openmp
+
+
+JulianDate
+bubbleSort : sort any value. Sort any value on any key
+GrowArray
+Multithreaded prime numbers
