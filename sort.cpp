@@ -24,7 +24,7 @@ void sort(int* const items, int n) {		//items is a const pointer, to int
 	}
 }
 
-void print(int a[], int n) {
+void print(int a[], int n) {		//a is an array const pointer, to int
 	for (int i = 0; i < n; i++) {
 		cout << a[i] << ' ';
 	}
