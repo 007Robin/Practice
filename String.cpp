@@ -58,7 +58,7 @@ class  String{
 
 			}
 		}
-		//copy constructor  --- String s5 = s3;
+		//operator equal  --- String s5 = s3;
 		String& operator = (const String& orig) {
 		//	delete [] p;
 			String copy(orig); 
