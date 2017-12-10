@@ -8,7 +8,7 @@ using namespace std;
 
 
 
-void sort(int* const items, int n) {
+void sort(int* const items, int n) {		//items is a const pointer, to int
 	for (int j = 0; j < n-1; j++) {
 		for (int i = 0; i < n-1; i++) {
 			if (items[i] > items[i+1]) {
