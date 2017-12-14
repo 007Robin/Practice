@@ -22,7 +22,7 @@ void bubblesort(T x[], Key T::*key, int n){  //key is a pointer to members of T,
 	// Key T::*key: inside class T, there is a pointer, to something of type Key
 	for(int j = 0; j < n -1; j++){
 		for(int i = 0; i < n -1; i++){
-			//if key is the name, it is .name; if is the age, it is .age
+			//if key is the name, it is .name; if is the age, it is .age . (*key) is a pointer to members of T
 			if(x[i].*key > x[i+1].*key)  //.* says look inside (x[i].*) at whatever key ispoint to, look inside (x[i+1].*) at whatever key is point to, compare those things.
 				swap(x[i], x[i+1]);
 		}
@@ -73,6 +73,7 @@ int main() {
 
 	Elephant e[] = {Elephant("alice", 20), Elephant("ferd", 22), Elephant("gerge", 19) }; 
 	bubblesort(e, &Elephant::age , 3); //my address is inside class Elephant, I want the age
+	//this class Elephant must match the class e, which is Elephant. 
 	print(e, 3);
 
 	bubblesort(e, &Elephant::name, 3);
