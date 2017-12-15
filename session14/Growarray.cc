@@ -18,15 +18,18 @@ private:
 		capacity = 2*capacity;		
 	}
 	void* operator new(size_t size, T* dest) {
-		return reinterpret_cast<void*>(dest);
+		return reinterpret_cast<void*>(dest);	//just turn dest into a pointer for copy 
 	}
 public:
 	GrowArray() : capacity(0), used(0), data(nullptr) {}
+	//data(new T[initialCapacity] will call constructor many times, too slow.
+	//We use new char[sizeof(T)*initialCapacity] allocate memery length first. 
+	//Then, reinterpret_cast<T*>, change char to T type
 	GrowArray(int initialCapacity) : capacity(initialCapacity), used(0), data(reinterpret_cast<T*>(new char[sizeof(T)*initialCapacity])) {}
 	~GrowArray() { delete [] data; }
 	GrowArray(const GrowArray& orig) : capacity(orig.capacity), used(orig.used), data(reinterpret_cast<T*>(new char[orig.capacity])) {
 		for (int i = 0; i < used; i++)
-			new (data+i) T(orig.data[i]); // operator new, placement syntax
+			new (data+i) T(orig.data[i]); // operator new, placement syntax, at location of data plus i, copy only used
 	}
 	GrowArray& operator =(GrowArray copy) {
 		swap(*this, copy);
