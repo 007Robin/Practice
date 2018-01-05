@@ -10,3 +10,10 @@ int main() {
 	d1.print(cout);
 	return 0;
 }
+
+/*
+
+
+derived
+0
+*/
