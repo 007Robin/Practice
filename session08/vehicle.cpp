@@ -20,3 +20,8 @@ int main() {
 #endif
 
 }
+/*
+I am a car and my speed = 99, my color is yellow
+I am a bus and my speed = 35, my passengers are 28
+I am a turck and my speed = 42, Cargo weight = 19000
+*/
