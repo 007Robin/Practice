@@ -4,6 +4,7 @@
 #include<string>
 using namespace std;
 
+//like STL find() using template
 template<typename iterator, typename value>
 iterator findvalue(iterator beg, iterator end, const value& v){
 	cout << v << endl;
