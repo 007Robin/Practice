@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 
-template<typename T, unsigned N> constexpr
+//constexpr get values at compile time.
+
+template<typename T, unsigned N> constexpr 
 unsigned size(const T (&v)[N]){
 	return N;
 }
