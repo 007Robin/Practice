@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
 template<typename SuperArray>
 void print(const SuperArray& arr){
 	for(const auto& e : arr)
