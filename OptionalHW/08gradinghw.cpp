@@ -22,10 +22,10 @@ int main() {
 	int grades[] = {85, 90, 91, 87};
 	cout << "av1:" <<average(grades, sizeof(grades)/sizeof(int));
 	cout << endl;
+	
 	int n;
 	cout << "Please enter the number of grades:";
 	cin >> n;
-
 	int grades2[n];
 	readIn(grades2, n);
 	cout << "av2:"<< average(grades2, n) << '\n';
