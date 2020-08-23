@@ -2,19 +2,19 @@
 using namespace std;
 
 int main() {
-	int a = 5;
-	//	string s = "abc";  // s[0] = 'a' s[1] = 'b' s[2] = 'c'
+	string s = "abc";   // s[0] = 'a', s[1] = 'b', s[2] = 'c'
 
-	int x[5]; // x[0] ... x[1] ... x[4]
-
+	int x[5];   // x[0], x[1] ... x[4]
 	int y[5] = { 5, 1, -9, -3, 16}; // initialized
 	int z[] = {5, 4, 3};
-	int w[10] = {5, 4, 3};// ... 0,0,0,0,0,0,0
+	int w[10] = {5, 4, 3};  // ... 0,0,0,0,0,0,0
+	
+	int a = 5;
 	const int SIZE = 10;
 	int b[SIZE] = {0};
 	for (int i = 0; i < SIZE; i++)
 		b[i] = i;
-
+        cout << sizeof(b)/sizeof(int) << endl;  //10
 	for (int i = 0; i < sizeof(b)/sizeof(int); i++)
 		b[i] = SIZE - i;
 
@@ -30,15 +30,13 @@ int main() {
 		}
 	}
 
-
 	cout << "Please enter matrix size: ";
 	int n;
-	cin >> n;
+	cin >> n;	
 	double m2[n]; //double* m2 = new double[n]
 	for (int i = 0; i < n; i++)
 		m2[i] = 0;
-
-	double m3[n][n]; //double* m2 = new double[n]
+	double m3[n][n]; //m3 = new double[n][n]
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++)
 			cout << m3[i][j] << ' ';
