@@ -58,7 +58,6 @@ public:
 		return *this;
 	}
 
-
 	//destructor
 	~Matrix () {
 		delete [] m;
@@ -68,9 +67,9 @@ public:
 
 	friend Matrix operator +(const Matrix& a, const Matrix& b) {
 		if( a.rows != b.rows || a.cols != b.cols) {
-		//cerr << "AAAAAAAAHHH"
-		//	throw "AAGH"; 
-			throw Badsize(__FILE__, __LINE__); //__ is belong to c++ MUST c++
+			//cerr << "Oh, Add Matrix BadSize";  --> way1: show error, (core dumped)
+			//throw "Oh, Add Matrix BadSize";    --> way2: try {...} catch(char const* e) { cout << e << endl; }
+			throw Badsize(__FILE__, __LINE__); //--> way3: catch self define error class, __ is belong to c++ MUST c++. 
 		}
 		else {
 			Matrix result(a.rows, b.cols);
@@ -106,52 +105,13 @@ int main() {
 	Matrix a(3, 4, 5.2); // create 3 rows of 4 cols containing 5.2
 	Matrix b(3, 4); // 0.0 default
 	cout << a << '\n';
-	
 	const Matrix m2(4, 4);
 	cout << Matrix(1, 1);
 	
 	try {
 		Matrix m3 = a + m2;
 
-	} catch( const Badsize& e) {
+	} catch (const Badsize& e) {
 		cout << e << '\n';
 	}
-
-/*	Matrix a;
-	ifstream f("hw6.dat"); 
-	f >> a;
-	vector<double> B;
-	f >> B;
-	
-	a.solve(x, B) // solve Ax = B
-	
-	cout << x;
-*/	/*
-	3 
-	1 2 1
-	1 -1 1
-	-2 1 1
-
-	5
-	4
-	3
-	   */
-	
-	/*
-		5.2 5.2 5.2 5.2 
-		5.2 5.2 5.2 5.2 
-		5.2 5.2 5.2 5.2 
-
-	*/
-/*	Matrix c(3, 4, 1.2);
-	cout << c(2,2); // call the copy read-only one
-	c(0,0) = -1.5; // call the & one
-	Matrix d = a + c;
-	cout << d;
-	Matrix e = a - c;
-
-	//optional
-	Matrix f(4, 3, 1.5);
-	Matrix g = f * b;
-*/
 }
