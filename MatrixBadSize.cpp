@@ -4,14 +4,14 @@
 using namespace std;
 
 class Badsize{
-	private:
-		const char* filename;
-		int linenum;
-	public:
-		Badsize(const char filename[], int linenum) : filename(filename), linenum(linenum) {}
-		friend ostream& operator <<(ostream& s, const Badsize& b ) {
-			return s << "Badsize.filename: " <<  b.filename << " linenum: "<<  b.linenum << endl;
-		}
+private:
+	const char* filename;
+	int linenum;
+public:
+	Badsize(const char filename[], int linenum) : filename(filename), linenum(linenum) {}
+	friend ostream& operator <<(ostream& s, const Badsize& b ) {
+		return s << "Badsize.filename: " <<  b.filename << " linenum: "<<  b.linenum << endl;
+	}
 };
 
 class Matrix {
@@ -98,7 +98,6 @@ ostream& operator <<(ostream& s, const Matrix& mtr) {
 	}
 	return s;
 }
-
 
 int main() {
 
